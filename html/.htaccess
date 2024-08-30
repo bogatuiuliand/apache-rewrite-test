@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# RewriteRule ^(.*)$ /new-page.html/$1 [NC,R=301,L]
+RewriteRule ^old-page\.html$ /new-page.html [R=301,L]
+# RewriteRule ^from-page\.html$ /space page-to.html [R=301,L]
+# RewriteRule ^space \page-from\.html$ /new-page.html [R=301,L]
+# RewriteRule ^space%20page-from\.html$ /new-page.html [R=301,L,NE]
+RewriteRule ^space\ page-from\.html$ /new-page.html [R=301,L]
+RewriteRule ^肥胖，是一种病\.html$ /new-page.html [R=301,L]
+RewriteRule ^sitehilleroed-papirfly$ /portal/doc?query=%7B%22rootIds%22%3A%5B5426%5D%2C%22limit%22%3A1%2C%22nodeIds%22%3A%5B5888%5D%2C%22incXP%22%3Atrue%7D&docId=26332 [R=301,L]
+# RewriteRule ^"/Novo Nordisk Diabetes - Obesity Infographic Link.pdf.coredownload.inline\.html$" "/Novo Nordisk Diabetes - Obesity Infographic Link.pdf.coredownload.inline.pdf" [NC,R=301,L]
+# RewriteRule ^Novo%20Nordisk%20Diabetes%20-%20Obesity%20Infographic%20Link.pdf.coredownload.inline.html$ /Novo1 Nordisk Diabetes - Obesity Infographic Link.pdf.coredownload.inline.pdf [R=301,L]
+RewriteRule "^Novo Nordisk Diabetes - Obesity Infographic Link\.pdf\.coredownload\.inline\.html$" "/Novo1 Nordisk Diabetes - Obesity Infographic Link.pdf.coredownload.inline.pdf" [NC,R=301,L]
+RewriteRule "^/content/dam/hcpexperience/au/en/protected_files/Novo Nordisk Diabetes - Obesity Infographic Link\.pdf\.coredownload\.inline\.pdf$" "/content/dam/hcp-plus/au/en/materials/protected_files/Novo Nordisk Diabetes - Obesity Infographic Link.pdf.coredownload.inline.pdf" [NC,R=301,L]
+RewriteRule "^/content/dam/hcpexperience/au/en/protected_files/Novo Nordisk Diabetes - Obesity Infographic Link\.pdf$" "https://%{HTTP_HOST}/content/dam/hcp-plus/au/en/materials/protected_files/Novo Nordisk Diabetes - Obesity Infographic Link.pdf" [NC,R=301,L]

@@ -10,8 +10,8 @@ To build and run the container, execute:
 ./docker-rebuild-run.sh
 ```
 This script will:
-	•	Build the Docker container
-	•	Start an Apache server with support for .htaccess rewrite rules
+  • Build the Docker container
+  • Start an Apache server with support for .htaccess rewrite rules
 
  ## 🔍 Testing Rewrite Rules
 To test your rewrite rules, use curl:
@@ -23,10 +23,10 @@ This will return the HTTP response headers, allowing you to check if the redirec
 ## 📄 Adding Rewrite Rules
   • The Apache rewrite rules must be added in:
 html/.htaccess
-	•	Please follow the examples provided in html/.htaccess when creating new rules.
+  • Please follow the examples provided in html/.htaccess when creating new rules.
 
 ## 📢 Notes
   • Ensure that .htaccess syntax is correct before restarting the container.
-	•	Use docker logs <container_id> for debugging if Apache rules are not behaving as expected.
+  • Use docker logs <container_id> for debugging if Apache rules are not behaving as expected.
 
 Happy rewriting! 🚀
